@@ -1,7 +1,7 @@
 absl-py==1.0.0
 aiohttp==3.7.4.post0
 aiosignal==1.2.0
-alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
+alabaster
 altgraph==0.17.3
 anaconda-client @ file:///C:/ci/anaconda-client_1635342725944/work
 anaconda-navigator==2.1.4

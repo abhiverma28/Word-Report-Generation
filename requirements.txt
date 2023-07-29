@@ -275,7 +275,6 @@ pyviz-comms @ file:///tmp/build/80754af9/pyviz_comms_1623747165329/work
 PyWavelets @ file:///C:/ci/pywavelets_1648728084106/work
 pywin32==302
 pywin32-ctypes @ file:///C:/ci/pywin32-ctypes_1607553594546/work
-pywinpty @ file:///C:/ci_310/pywinpty_1644230983541/work/target/wheels/pywinpty-2.0.2-cp39-none-win_amd64.whl
 PyYAML==6.0
 pyzmq @ file:///C:/ci/pyzmq_1638435148211/work
 QDarkStyle @ file:///tmp/build/80754af9/qdarkstyle_1617386714626/work

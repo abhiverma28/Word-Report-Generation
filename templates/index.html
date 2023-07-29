@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Report</title>
+</head>
+<body>
+    <h1>Generate Report</h1>
+    <p>Please select an Excel file (.xlsx) and a Word template file (.docx) to generate reports.</p>
+
+    <form method="post" action="/" enctype="multipart/form-data">
+        <label for="excelFile">Select Excel File:</label>
+        <input type="file" id="excelFile" name="excelFile" accept=".xlsx" required><br>
+
+        <label for="wordTemplate">Select Word Template File:</label>
+        <input type="file" id="wordTemplate" name="wordTemplate" accept=".docx" required><br>
+
+        <input type="submit" value="Generate Reports">
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

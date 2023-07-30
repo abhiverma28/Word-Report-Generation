@@ -281,7 +281,6 @@ requests-oauthlib
 rope 
 rsa 
 Rtree 
-ruamel-yaml-conda 
 s3transfer 
 scikit-image 
 scikit-learn 

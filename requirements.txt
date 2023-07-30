@@ -1,7 +1,7 @@
 blinker==1.6.2
 click==8.1.6
 colorama==0.4.6
-docx==0.2.4
+docx==0.2.3
 et-xmlfile==1.1.0
 Flask==2.2.5
 importlib-metadata==6.7.0

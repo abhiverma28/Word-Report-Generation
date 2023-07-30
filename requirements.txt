@@ -53,8 +53,7 @@ comtypes
 conda-build
 conda-content-trust 
 conda-pack 
-conda-package-handling 
-conda-token 
+conda-package-handling  
 conda-verify
 constantly
 cookiecutter 

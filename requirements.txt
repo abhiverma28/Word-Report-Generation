@@ -161,7 +161,6 @@ MarkupSafe
 matplotlib 
 matplotlib-inline 
 mccabe
-menuinst 
 mistune 
 mkl-fft
 mkl-random 

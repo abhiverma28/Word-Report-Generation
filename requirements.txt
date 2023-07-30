@@ -220,7 +220,6 @@ protobuf
 psutil 
 ptyprocess 
 pure-eval 
-py 
 pyasn1 
 pyasn1-modules
 PyAutoGUI

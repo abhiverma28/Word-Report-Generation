@@ -266,7 +266,6 @@ pytz
 pyviz-comms 
 PyWavelets 
 pywin32-ctypes 
-pywinpty 
 PyYAML
 pyzmq 
 QDarkStyle 

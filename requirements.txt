@@ -265,7 +265,6 @@ pytweening
 pytz
 pyviz-comms 
 PyWavelets 
-pywin32-ctypes 
 PyYAML
 pyzmq 
 QDarkStyle 

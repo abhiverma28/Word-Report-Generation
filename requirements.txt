@@ -4,7 +4,6 @@ aiosignal
 alabaster 
 altgraph==0.17.3
 anaconda-client 
-anaconda-navigator
 anaconda-project 
 anyio 
 appdirs==1.4.4

@@ -4,7 +4,7 @@ from openpyxl import load_workbook
 from docx import Document
 
 app = Flask(__name__)
-app.secret_key = "d83fc5b8be09be13b6388b1c39be6a38"  # Replace with a secret key for flashing messages
+app.secret_key = "d83fc5b8be09be13b6398b1c39be6a28"  # Replace with a secret key for flashing messages
 
 # Ensure that the "temp" directory exists
 if not os.path.exists("temp"):

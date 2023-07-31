@@ -17,7 +17,7 @@ def generate_report(excel_file, word_template_file):
     # Get all rows with data from the Excel file
     data_rows = list(ws.iter_rows(min_row=2, values_only=True))
     if not data_rows:
-        flash("No data found in the Excel file.", "error")
+        flash("No data found in the Excel file.")
         return
 
     report_count = 0  # To keep track of the number of reports generated
@@ -36,7 +36,7 @@ def generate_report(excel_file, word_template_file):
         # Get the filename from the first column (column A)
         filename = data_row[0]
         if not filename:
-            flash("Filename not available for a row. Skipping.", "error")
+            flash("Filename not available for a row. Skipping.")
             continue
 
         for paragraph in word_template.paragraphs:
@@ -55,7 +55,18 @@ def generate_report(excel_file, word_template_file):
             word_template.save(f)
         report_count += 1
 
-    flash(f"{len(data_rows)} data rows were found, and {report_count} reports have been generated.", "success")
+    flash(f"{len(data_rows)} data rows were found, and {report_count} reports have been generated.")
+    
+def show_popup_message(message):
+    app.attributes("-topmost", True)  # Set the Tkinter window to be topmost
+    flash("Message", message)
+
+def select_files():
+    excel_file = filedialog.askopenfilename(filetypes=[("Excel Files", "*.xlsx")])
+    word_template_file = filedialog.askopenfilename(filetypes=[("Word Files", "*.docx")])
+
+    if excel_file and word_template_file:
+        generate_report(excel_file, word_template_file)    
 
 @app.route("/", methods=["GET", "POST"])
 def index():
